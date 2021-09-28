@@ -1,3 +1,10 @@
+<?php
+if($_POST["Message"]) {
+mail("mlharvey871@gmail.com", "Here is the sample subject line",
+$_POST["Insert Your Message"]. "From: jane@janedoe.com");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,9 +115,20 @@
         <br>
         <img id="logo" class="thick-green-border centre-image" src="assets/scrimprlogo bigcoin1.jpg" alt="3" width="auto" height="100">
         <br>
-    
         <button id="background-button" class ="centre-image" type="button" onclick = "changeBackground()">Change Background Colour</button>
+        <br>
+        <label id="toggle" class="switch centre-image" onclick = "changeBackground()">
+          <input type="checkbox">
+          <span class="slider round"></span>
+          
+        </label>
        <br>
+       <form method="POST" name="testform">
+
+        Enter Pig's ID:	<input type="text" name="name">
+        
+        <input class ="centre-image" type="submit" value="Send Form">
+        </form>
       </div>
 
     </main>
