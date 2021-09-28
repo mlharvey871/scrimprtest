@@ -1,3 +1,9 @@
+<?php
+if($_POST["Message"]) {
+mail("mlharvey871@gmail.com", "Here is the sample subject line",
+$_POST["Insert Your Message"]. "From: jane@janedoe.com");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -108,11 +114,13 @@
       <div id="middle">
         <br>
         <img id="logo" class="thick-green-border centre-image" src="assets/scrimprlogo bigcoin1.jpg" alt="3" width="auto" height="100">
-
-        <p> Pig's Name: </p>
-
         <br>
-          
+
+        <div ID="pigs-name">
+     
+        <h2> Pig's Name: </h2>
+          </div>
+  <br>
   </textarea>
         <button id="background-button" class ="centre-image" type="button" onclick = "changeBackground()">Change Background Colour</button>
         <br>
